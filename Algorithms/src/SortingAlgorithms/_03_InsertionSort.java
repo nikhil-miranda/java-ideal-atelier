@@ -1,2 +1,4 @@
-package SortingAlgorithms;public class _03_InsertionSort {
+package SortingAlgorithms;
+
+public class _03_InsertionSort {
 }
