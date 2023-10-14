@@ -2,7 +2,7 @@ package SortingAlgorithms;
 
 import java.util.Arrays;
 
-public class SelectionSort {
+public class _02_SelectionSort {
 
     /**
      * Selection sort is an in-place comparison sorting algorithm.
@@ -48,7 +48,6 @@ public class SelectionSort {
         }
         System.out.println(Arrays.toString(unsortedIntegerArray));
     }
-
 
     public static void main(String[] args) {
         int[] unsortedIntegerArray = {20, 35, -15, 7, 55, 1, -22};
