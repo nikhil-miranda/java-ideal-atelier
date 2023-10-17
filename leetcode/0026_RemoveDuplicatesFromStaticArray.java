@@ -1,7 +1,9 @@
 /**
  * Number: 26
  * Title: Remove Duplicates from Sorted Array.
- * Question: Given an integer array 'nums' sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
+ * Question: Given an integer array 'nums' sorted in non-decreasing order, remove the duplicates
+ * in-place such that each unique element appears only once. The relative order of the elements
+ * should be kept the same. Then return the number of unique elements in nums.
  *
  * Test Case 1: [1,1,2]
  * Test Case 2: [0,0,1,1,1,2,2,3,3,4]
