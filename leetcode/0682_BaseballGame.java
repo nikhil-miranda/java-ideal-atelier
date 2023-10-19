@@ -1,3 +1,15 @@
+/**
+ * Number: 682
+ * Title: Baseball Game
+ * Question: You are keeping the scores for a baseball game with strange rules.
+ * At the beginning of the game, you start with an empty record.
+ * You are given a list of strings operations, where operations[i] is the ith
+ * operation you must apply to the record and is one of the following:
+ *
+ * Test Case 1: [1,2,1]
+ * Test Case 2: [1,3,2,1]
+ */
+
 class Solution {
     public int calPoints(String[] operations) {
 
