@@ -5,32 +5,28 @@ import java.util.Stack;
 
 public class Scratch {
 
-    public static boolean isValid(String s) {
-        Stack<Character> stack = new Stack<>();
-
-        for (char ch : s.toCharArray()) {
-            if (ch == '(' || ch == '{' || ch == '[')
-                stack.push(ch);
-            else if (stack.isEmpty())
-                return Boolean.FALSE;
-            else {
-                char popCh = stack.pop();
-                if (ch == ')' && popCh != '(')
-                    return Boolean.FALSE;
-                if (ch == '}' && popCh != '{')
-                    return Boolean.FALSE;
-                if (ch == ']' && popCh != '[')
-                    return Boolean.FALSE;
+    public static int numberOfSteps(int num) {
+        int counter = 0;
+        if (num < 0) {
+            return 0;
+        }
+        while (num > 0 ) {
+            if (num % 2 == 0) {
+                num = num / 2;
+                if (num % 2 == 1) {
+                    num = num - 1;
+                    counter++;
+                }
+                counter++;
             }
         }
-        return stack.isEmpty();
+        return counter;
     }
 
-
     public static void main(String[] args) {
-
         String s = "(){}[{]";
-        System.out.println("Result = " + isValid(s));
+        int num = 14;
+        System.out.println("Result = " + numberOfSteps(num));
     }
 
 }
