@@ -1,2 +1,4 @@
-package Projects.TicTacToe.models;public class GameState {
+package Projects.TicTacToe.models;
+
+public class GameState {
 }

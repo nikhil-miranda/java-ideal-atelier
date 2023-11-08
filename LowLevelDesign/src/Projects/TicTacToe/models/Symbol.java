@@ -1,2 +1,4 @@
-package Projects.TicTacToe.models;public class Symbol {
+package Projects.TicTacToe.models;
+
+public class Symbol {
 }

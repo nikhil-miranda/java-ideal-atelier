@@ -1,2 +1,9 @@
-package Projects.TicTacToe.strategies;public interface BotPlayingStratergy {
+package Projects.TicTacToe.strategies;
+
+public interface BotPlayingStrategy {
+
+    void makeMove();
+
+
+
 }

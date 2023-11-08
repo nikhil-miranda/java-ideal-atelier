@@ -1,2 +1,4 @@
-package Projects.TicTacToe.models;public class Move {
+package Projects.TicTacToe.models;
+
+public class Move {
 }

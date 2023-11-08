@@ -1,2 +1,4 @@
-package Projects.TicTacToe.models;public class PlayerType {
+package Projects.TicTacToe.models;
+
+public class PlayerType {
 }
