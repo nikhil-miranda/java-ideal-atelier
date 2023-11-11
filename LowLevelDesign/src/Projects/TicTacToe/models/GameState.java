@@ -1,4 +1,11 @@
 package Projects.TicTacToe.models;
 
-public class GameState {
+public enum GameState {
+
+    IN_PROGRESS,
+
+    DRAW,
+
+    WINNER
+
 }

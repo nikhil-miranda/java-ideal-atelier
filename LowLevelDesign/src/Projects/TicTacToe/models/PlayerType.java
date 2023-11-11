@@ -1,4 +1,9 @@
 package Projects.TicTacToe.models;
 
-public class PlayerType {
+public enum PlayerType {
+
+    BOT,
+
+    HUMAN
+
 }
