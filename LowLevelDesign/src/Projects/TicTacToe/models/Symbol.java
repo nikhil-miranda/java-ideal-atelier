@@ -1,7 +1,11 @@
 package Projects.TicTacToe.models;
 
 public class Symbol {
-    private Character aChar;
+    private char aChar;
+
+    public Symbol(char aChar) {
+        this.aChar = aChar;
+    }
 
     public Character getaChar() {
         return aChar;

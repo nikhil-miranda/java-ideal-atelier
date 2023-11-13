@@ -31,6 +31,34 @@ public class Game {
         return new Builder();
     }
 
+    public GameState getGameState() {
+        return gameState;
+    }
+
+    public void setGameState(GameState gameState) {
+        this.gameState = gameState;
+    }
+
+    public void makeMove() {
+        Player currentMovePlayer = players.get(nextMovePlayerIndex);
+
+        Move move = currentMovePlayer.makeMove();
+        System.out.println(currentMovePlayer.getName()
+                + " has make a move for row: " + move.getCell().getRow() + " and col: " + move.getCell().getCol());
+
+        // TODO: validation
+
+        int row = move.getCell().getRow();
+        int col = move.getCell().getCol();
+
+        Cell cellToChange = board.getBoard().get(row).get(col);
+        cellToChange.setCellState(CellState.FILLED);
+        cellToChange.setPlayer(currentMovePlayer);
+
+        Move finalMove = new Move(cellToChange, currentMovePlayer);
+        moves.add(finalMove);
+    }
+
     public static class Builder {
         private List<Player> players;
         private List<WinningStrategy> winningStrategies;
@@ -112,5 +140,9 @@ public class Game {
                 }
             }
         }
+    }
+
+    public void printBoard() {
+        board.printBoard();
     }
 }
