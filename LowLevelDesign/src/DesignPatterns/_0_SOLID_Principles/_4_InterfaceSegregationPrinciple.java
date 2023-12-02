@@ -8,17 +8,17 @@ public class _4_InterfaceSegregationPrinciple {
      * This is achieved by separating the interfaces into smaller interfaces.
      * Interface Pollution: When a class implements an interface that it doesn't use.
      *
-     *      Example:
-     *          - You have a class called Printer.java which has a print() method.
-     *          - You have a class called Scanner.java which has a scan() method.
-     *          - You have a class called Fax.java which has a fax() method.
-     *          - You have a class called PrintScanner.java which implements Printer.java and Scanner.java.
-     *          - You have a class called PrintScannerFax.java which implements Printer.java, Scanner.java, and Fax.java.
-     *          - You want to create a new class called PrintFax.java which implements Printer.java and Fax.java.
-     *          - You cannot create this class because it doesn't have the scan() method.
-     *          - This is because of interface pollution.
-     *          - This can be solved by separating the interfaces into smaller interfaces.
-     *          - This way, you don't have to implement the scan() method in the PrintFax class.
+     * Example:
+     * - You have a class called Printer.java which has a print() method.
+     * - You have a class called Scanner.java which has a scan() method.
+     * - You have a class called Fax.java which has a fax() method.
+     * - You have a class called PrintScanner.java which implements Printer.java and Scanner.java.
+     * - You have a class called PrintScannerFax.java which implements Printer.java, Scanner.java, and Fax.java.
+     * - You want to create a new class called PrintFax.java which implements Printer.java and Fax.java.
+     * - You cannot create this class because it doesn't have the scan() method.
+     * - This is because of interface pollution.
+     * - This can be solved by separating the interfaces into smaller interfaces.
+     * - This way, you don't have to implement the scan() method in the PrintFax class.
      */
 
     public interface Printer {
